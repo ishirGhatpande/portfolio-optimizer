@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+efficient_frontier.png
+portfolio_results.xlsx
+.env
