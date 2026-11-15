@@ -22,20 +22,21 @@ The optimal portfolios are found by Monte Carlo simulation (picking the best of 
 
 ```bash
 pip install -r requirements.txt
-python main.py
+python src/main.py
 ```
 
 ## Configuration
 
-Edit `config.py` to change the stock universe, the data window (`YEARS_OF_DATA`), the number of simulated portfolios (`NUM_PORTFOLIOS`), the risk-free rate (`RISK_FREE_RATE`, set to 4.3%), and output file names.
+Edit `src/config.py` to change the stock universe, the data window (`YEARS_OF_DATA`), the number of simulated portfolios (`NUM_PORTFOLIOS`), the risk-free rate (`RISK_FREE_RATE`, set to 4.3%), and output file names.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `main.py` | Entry point that runs the full pipeline |
-| `config.py` | Tickers, data window and simulation settings |
-| `data_fetcher.py` | Downloads prices and computes return statistics |
-| `optimizer.py` | Monte Carlo simulation and optimal portfolio selection |
-| `visualizer.py` | Efficient frontier chart |
-| `excel_output.py` | Excel workbook export |
+| `requirements.txt` | Python dependencies |
+| `src/main.py` | Entry point that runs the full pipeline |
+| `src/config.py` | Tickers, data window and simulation settings |
+| `src/data_fetcher.py` | Downloads prices and computes return statistics |
+| `src/optimizer.py` | Monte Carlo simulation and optimal portfolio selection |
+| `src/visualizer.py` | Efficient frontier chart |
+| `src/excel_output.py` | Excel workbook export |
